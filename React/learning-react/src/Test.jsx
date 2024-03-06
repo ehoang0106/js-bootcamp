@@ -1,10 +1,12 @@
 
-const currenDate = new Date(2024, 1, 1, 11);
+const currenDate = new Date();
 
 const currentTime = currenDate.getHours();
 
 
-
+function Heading() {
+    return <h1>Good asd</h1>;
+}
 
 const h1Style = {
     color: "Red",
@@ -29,7 +31,7 @@ const Test = () => {
     return (
         <div>
             <h1 style={h1Style}>Good {partOfDay.part}</h1>
-            
+            <Heading></Heading>
         </div>
     );
 }
