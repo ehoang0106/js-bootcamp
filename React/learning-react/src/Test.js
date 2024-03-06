@@ -1,17 +1,21 @@
+const name = 'Khoa Hoang';
+const currenDate = new Date();
+const year = currenDate.getFullYear();
+
+const customStyle = {
+    color: "red",
+    fontSize: "20px",
+    border: "2px solid black"
+}
+
 const List = () => {
     return (
         <div>
-            <h2>
-                Fav Food
-            </h2>
-
-            <ul>
-                <li>Bacon</li>
-                <li>Sandwich</li>
-                <li></li>
-            </ul>
+            <p style={customStyle}>Create by: {name}</p>
+            <p>Copyright {year}</p>
+            
         </div>
-      );
+    );
 }
- 
+
 export default List
