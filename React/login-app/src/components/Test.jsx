@@ -2,30 +2,27 @@ import { useState } from "react";
 
 const Test = () => {
 
-    const [name, setName] = useState("");
-    const [headingText, setHeadtingText] = useState("");
+    const [fName, setFName] = useState("");
+    const [lName, setLName] = useState("");
 
-
-
-    function handleClick(event) {
-        setHeadtingText(name);
-        event.preventDefault();
+    function updateFName(event) {
+        const firstName = event.target.value;
+        setFName(firstName);
     }
 
-    function handleChange(event) {
-        setName(event.target.value);
+    function updateLName(event) {
+        const lastName = event.target.value;
+        setLName(lastName);
     }
 
+    
     return (  
         <div className="container">
-            <h1>Hello {headingText}</h1>
-            <form onSubmit={handleClick}>
-                <input onChange={handleChange} type="text" placeholder="What's your name?"/>
-                <button 
-                //onClick={handleClick} 
-                type="submit">
-                Submit
-                </button>
+            <h1>Hello {fName} {lName}</h1>
+            <form>
+                <input type="fName" placeholder="First Name" value={fName} onChange={updateFName}/>
+                <input type="lName" placeholder="Last Name" value={lName} onChange={updateLName} />
+                <button>Submit</button>
             </form>
         </div>
     );
