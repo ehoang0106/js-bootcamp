@@ -62,3 +62,19 @@ form button {
     border-radius: 10px;
     width: 100px;
 }
+
+.test input { 
+    border: 2px solid rgba(252, 252, 252, 0.4);
+    background-color: rgba(252, 252, 252, 0.2);
+    width: 250px;
+    border-radius: 20px;
+    padding: 20px 10px;
+    margin: 0 auto 10px auto;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+}
+
+.test button {
+    color: rgb(3, 122, 29);
+}
